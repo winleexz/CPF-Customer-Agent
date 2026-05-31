@@ -4,9 +4,9 @@ A hackathon to build an AI agent on top of a knowledge graph that understands co
 ## 1.	What It Does 
 The CPF Customer Agent is an advanced reasoning assistant built for customer service executives handling Central Provident Fund (CPF) inquiries. It uses GraphRAG to merge semantic vector search with structural graph relationships. 
 
-When an executive receives an inquiry, the agent simultaneously retrieves verified policy documents and crucially layers in the member's specific profile (e.g. age, account balance) and past question history. By executing multi-hop reasoning over this connected data, the agent provides customer service executives with hyper-personalised, accurate and factually grounded response in real-time.
+When an executive receives an inquiry, the agent simultaneously retrieves verified policy documents and crucially layers in the customer's specific profile (e.g. age, account balance) and past question history. By executing multi-hop reasoning over this connected data, the agent provides customer service executives with hyper-personalised, accurate and factually grounded response in real-time.
 
-For example, if a member asks: "How much do I need to top up to reach the FRS (Full Retirement Sum) in 2027?", the agent doesn't just return a generic definition of FRS. It automatically retrieves the member's current account balance via the graph, calculates their specific profile constraints, and produces a contextual answer.
+For example, if a customer asks: "How much do I need to top up to reach the FRS (Full Retirement Sum) in 2027?", the agent doesn't just return a generic definition of FRS. It automatically retrieves the member's current account balance via the graph, calculates their specific profile constraints, and produces a contextual answer.
 
 ## 2.	Dataset 
 The agent utilises GraphRAG to structurally unify three distinct data dimensions into a single, cohesive knowledge network:
@@ -19,7 +19,7 @@ The agent utilises GraphRAG to structurally unify three distinct data dimensions
 In public pension systems, policy answers are a dynamic function of a citizen's identity, not a static document. A graph addresses this by providing the ultimate contextual scaffolding:
 - **Contextual Convergence Without Joins**: A flat vector search can find a document about "CPF LIFE eligibility," but it cannot simultaneously evaluate if Customer X is eligible. GraphRAG allows the agent to pull the semantically relevant policy node and instantly traverse to the specific customer node in a single operation.
 - **Hyper-Focused Grounding**: GraphRAG extracts a precise, pre-filtered subgraph (exact policy criteria + customer profile) to inject into the LLM prompt, mitigating hallucinations
-- **Temporal Awareness**: By traversing the [:ASKED] relationships, the agent can instantly see if a customer's current question is a follow-up to a previous inquiry (e.g., a member asking about housing policy right after asking about retirement funds). This prevents the executive from repeating information and provides an immediate, continuous narrative of the member's journey.
+- **Temporal Awareness**: By traversing the [:ASKED] relationships, the agent can instantly see if a customer's current question is a follow-up to a previous inquiry (e.g., a member asking about housing policy right after asking about retirement funds). This prevents the customer service executive from repeating information and provides an immediate, continuous narrative of the customer's journey.
 
 ## 4.	Agent Tools 
 The agent pipeline is driven by an orchestrated suite of specialised tools that blend deterministic graph querying and semantic reasoning using three core tools:
@@ -49,9 +49,9 @@ The agent pipeline is driven by an orchestrated suite of specialised tools that 
 
 - Graph Database & Vector Index: Neo4j AuraDB to handle Cypher templates, vector search and cosine similarity vector matching
 - Core Reasoning Engine: Gemini 1.5 Pro / Flash
-- Embeddings Model: Vertex AI gemini-embedding-001
+- Embeddings Model: Gemini-embedding-001
 - Agent Orchestration: LangChain / LlamaIndex for Aura agent orchestration, tool-calling pipelines and managing the GraphRAG memory flow
-- Backend: Asynchronous Python / FastAPI using the official Neo4j Python Driver.
+- Backend: Asynchronous Python / FastAPI using the official Neo4j Python Driver
 
 ## 7.	What is the Impact?
 - **From "Search" to "Reasoning"**: Most AI bots perform a vector lookup and dump a block of text into a prompt. The CPF Customer Agent reasons across a connected knowledge network, providing the LLM with the multi-dimensional context required for complex public policy
