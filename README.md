@@ -10,22 +10,22 @@ For example, if a member asks: "How much do I need to top up to reach the FRS (F
 
 ## 2.	Dataset 
 The agent utilises GraphRAG to structurally unify three distinct data dimensions into a single, cohesive knowledge network:
-a) Customer Profiles (Structured): synthetically generated customer data containing attributes like customerId, gender, age, accountBalance and archetype
-b) FAQ Knowledge Base (Unstructured): question-answer pairs extracted from CPF website. The knowledge base contains questionId, questionText, answerText, questionEmbedding (generated via gemini-embedding-001)
-c) Interaction History (Relational): direct relationships tracking what customers have asked in the past
+- Customer Profiles (Structured): synthetically generated customer data containing attributes like customerId, gender, age, accountBalance and archetype
+- FAQ Knowledge Base (Unstructured): question-answer pairs extracted from CPF website. The knowledge base contains questionId, questionText, answerText, questionEmbedding (generated via gemini-embedding-001)
+- Interaction History (Relational): direct relationships tracking what customers have asked in the past
 <img width="822" height="739" alt="image" src="https://github.com/user-attachments/assets/60ffc1ea-060b-46ff-bc28-c0578ec13e39" />
 
 ## 3.	Why a Graph Fits
 In public pension systems, policy answers are a dynamic function of a citizen's identity, not a static document. A graph addresses this by providing the ultimate contextual scaffolding:
-a) **Contextual Convergence Without Joins**: A flat vector search can find a document about "CPF LIFE eligibility," but it cannot simultaneously evaluate if Customer X is eligible. GraphRAG allows the agent to pull the semantically relevant policy node and instantly traverse to the specific customer node in a single operation.
-b) **Hyper-Focused Grounding**: GraphRAG extracts a precise, pre-filtered subgraph (exact policy criteria + customer profile) to inject into the LLM prompt, mitigating hallucinations
-c) **Temporal Awareness**: By traversing the [:ASKED] relationships, the agent can instantly see if a customer's current question is a follow-up to a previous inquiry (e.g., a member asking about housing policy right after asking about retirement funds). This prevents the executive from repeating information and provides an immediate, continuous narrative of the member's journey.
+- **Contextual Convergence Without Joins**: A flat vector search can find a document about "CPF LIFE eligibility," but it cannot simultaneously evaluate if Customer X is eligible. GraphRAG allows the agent to pull the semantically relevant policy node and instantly traverse to the specific customer node in a single operation.
+- **Hyper-Focused Grounding**: GraphRAG extracts a precise, pre-filtered subgraph (exact policy criteria + customer profile) to inject into the LLM prompt, mitigating hallucinations
+- **Temporal Awareness**: By traversing the [:ASKED] relationships, the agent can instantly see if a customer's current question is a follow-up to a previous inquiry (e.g., a member asking about housing policy right after asking about retirement funds). This prevents the executive from repeating information and provides an immediate, continuous narrative of the member's journey.
 
 ## 4.	Agent Tools 
 The agent pipeline is driven by an orchestrated suite of specialised tools that blend deterministic graph querying and semantic reasoning using three core tools:
-a) Get Customer Profile	(Cypher Template) - retrieves structured demographic variables
-b) Get Customer Question History (Cypher Template) - traverses the [:ASKED] relationships for a specific Customer ID to return a chronological list of prior questions
-c) Get semantically similar question (Similarity Search) - embeds the incoming inquiry using gemini-embedding-001 and executes a cosine similarity search against the knowledge base to find the closest verified CPF FAQ
+- Get Customer Profile	(Cypher Template) - retrieves structured demographic variables
+- Get Customer Question History (Cypher Template) - traverses the [:ASKED] relationships for a specific Customer ID to return a chronological list of prior questions
+- Get semantically similar question (Similarity Search) - embeds the incoming inquiry using gemini-embedding-001 and executes a cosine similarity search against the knowledge base to find the closest verified CPF FAQ
 
 ## 5.	Agent & Multi-Hop Reasoning in Action
 **a) Scenario A: Eligibility Check**
@@ -54,10 +54,10 @@ c) Get semantically similar question (Similarity Search) - embeds the incoming i
 - Backend: Asynchronous Python / FastAPI using the official Neo4j Python Driver.
 
 ## 7.	What is the Impact?
-a) **From "Search" to "Reasoning"**: Most AI bots perform a vector lookup and dump a block of text into a prompt. The CPF Customer Agent reasons across a connected knowledge network, providing the LLM with the multi-dimensional context required for complex public policy
-b) **Enterprise-Grade Grounding**: Public sector applications require absolute precision. By bounding the LLM strictly to factual subgraphs retrieved via Cypher templates, hallucinations are completely mitigated.
-c) **Operational Efficiency**: By unifying policies, customer profiles, and conversation history into a single, cohesive graph canvas, we eliminate the need for customer service executives to swivel-chair between different CRM tabs and policy manuals, drastically slashing Average Handle Time (AHT) while driving up response accuracy.
+- **From "Search" to "Reasoning"**: Most AI bots perform a vector lookup and dump a block of text into a prompt. The CPF Customer Agent reasons across a connected knowledge network, providing the LLM with the multi-dimensional context required for complex public policy
+- **Enterprise-Grade Grounding**: Public sector applications require absolute precision. By bounding the LLM strictly to factual subgraphs retrieved via Cypher templates, hallucinations are completely mitigated.
+- **Operational Efficiency**: By unifying policies, customer profiles, and conversation history into a single, cohesive graph canvas, we eliminate the need for customer service executives to swivel-chair between different CRM tabs and policy manuals, drastically slashing Average Handle Time (AHT) while driving up response accuracy.
 
 ## Resources
-a) https://neo4j.com/developer/genai-ecosystem/
-b) https://neo4j.com/product/aura-agent/ 
+- https://neo4j.com/developer/genai-ecosystem/
+- https://neo4j.com/product/aura-agent/ 
