@@ -1,0 +1,290 @@
+Customer_ID,Gender,Age,Account_Balance,Archetype,Question ID,Question,Answer
+1,M,45,121387,6,1,How much can I withdraw from CPF at age 55?,"You can withdraw up to $5,000 unconditionally from age 55."
+1,M,45,121387,6,2,What accounts make up CPF savings?,"CPF consists of OA, SA, MediSave, and Retirement Accounts."
+1,M,45,121387,6,3,What interest does my Ordinary Account earn?,The Ordinary Account earns 2.5% annual interest.
+1,M,45,121387,6,4,What interest does my Special Account earn?,The Special Account earns 4% annual interest.
+1,M,45,121387,6,5,What is the Retirement Account?,It is created at age 55 for retirement payouts.
+2,F,53,185839,1,6,What are CPF monthly payouts for?,CPF monthly payouts provide retirement income to support daily living expenses.
+3,F,47,44364,2,8,What happens to discounted Singtel shares in CPF nomination?,They may be transferred to nominees or sold based on instructions.
+3,F,47,44364,2,7,What is the MediSave Account used for?,MediSave is used for healthcare expenses and insurance premiums.
+4,M,33,112756,5,9,Can I make a CPF nomination online?,"Yes, online nominations are available via Singpass."
+4,M,33,112756,5,10,Can I review my CPF nomination?,"Yes, online review is available anytime."
+4,M,33,112756,5,11,Can I top up my Retirement Account?,"Yes, you can top up your Retirement Account up to the Enhanced Retirement Sum."
+4,M,33,112756,5,12,Does marriage revoke CPF nominations?,"Yes, marriage revokes prior nominations."
+5,M,48,114122,6,21,What happens if I delay CPF LIFE payouts?,Delayed payouts increase monthly payout amounts.
+5,M,48,114122,6,17,What happens to my CPF savings at age 55?,Savings from OA and SA are transferred to the Retirement Account.
+5,M,48,114122,6,22,What is accrued interest for housing?,Accrued interest refers to the interest your CPF savings would have earned if not used for housing.
+5,M,48,114122,6,20,When can I start receiving CPF LIFE payouts?,You can start receiving CPF LIFE payouts anytime between age 65 and 70.
+6,M,45,127024,2,24,What is the Enhanced Retirement Sum?,It allows members to receive even higher payouts.
+7,F,47,90644,2,27,Is CPF LIFE mandatory?,Eligible members born in 1958 or later are automatically included.
+7,F,47,90644,2,28,What happens to unused CPF LIFE premiums after death?,Unused balances are distributed to nominees.
+7,F,47,90644,2,30,What is the CPF Withdrawal Lock?,The CPF Withdrawal Lock allows members to set their online withdrawal limit to $0 as an anti-scam measure.
+8,F,54,172905,4,32,Can I make partial CPF withdrawals?,"Yes, partial withdrawals are allowed."
+8,F,54,172905,4,33,Can I set my Daily Withdrawal Limit lower?,"Yes, members can customise their limits."
+8,F,54,172905,4,34,Can I withdraw all my CPF savings at 55?,You can withdraw savings after setting aside the required sums.
+8,F,54,172905,4,31,What is the Retirement Sum Scheme?,It provides payouts for members not on CPF LIFE.
+9,M,40,17684,8,37,Can I leave my CPF savings in my account after 55?,"Yes, your savings will continue earning CPF interest if left in the accounts."
+9,M,40,17684,8,39,What happens if I continue working after 55?,You can continue contributing to CPF and grow your retirement savings.
+9,M,40,17684,8,36,What is the Daily Withdrawal Limit?,It caps the amount withdrawn online daily.
+10,M,53,49567,2,40,Can I make CPF withdrawals anytime after 55?,"Yes, withdrawable savings can be withdrawn anytime after age 55."
+11,M,26,180894,8,42,Can I continue earning interest on CPF savings?,"Yes, CPF balances continue earning interest."
+11,M,26,180894,8,44,How will my nominees receive my CPF savings?,CPF savings are distributed in cash via PayNow or GIRO.
+13,F,51,97947,3,48,Can I choose who receives my CPF savings after death?,"Yes, by making a CPF nomination."
+13,F,51,97947,3,51,What happens if I do not make a CPF nomination?,Savings are distributed under intestacy laws.
+14,F,48,37728,1,54,Do I need to refund CPF if I sell my property at a loss?,No cash top-up is required if sold at market value.
+14,F,48,37728,1,52,What happens if I live longer than expected under CPF LIFE?,CPF LIFE continues paying monthly payouts for as long as you live.
+14,F,48,37728,1,55,What happens if I sell my house financed with CPF savings?,CPF used plus accrued interest must be refunded.
+15,M,30,131195,4,61,What is CPF used for?,"CPF supports retirement, healthcare, and housing needs."
+16,M,34,26001,4,62,What is the MediSave Account?,It helps pay for healthcare expenses.
+17,M,38,182155,8,65,What interest does the OA earn?,OA currently earns 2.5% interest annually.
+17,M,38,182155,8,66,What interest does the SA earn?,SA currently earns 4% annual interest.
+17,M,38,182155,8,67,What is CPF used for besides retirement?,CPF also supports housing and healthcare needs.
+20,F,44,212023,1,70,Can I defer the start of my CPF LIFE payouts?,"Yes, up to age 70."
+20,F,44,212023,1,72,What does a CPF nomination cover?,"A CPF nomination covers your CPF balances, CPF LIFE premium balance, and discounted Singtel shares."
+20,F,44,212023,1,73,What is CPF LIFE?,CPF LIFE provides lifelong retirement payouts.
+21,M,50,64942,7,78,What happens at age 55?,CPF savings are transferred into a Retirement Account.
+21,M,50,64942,7,75,Who can join CPF LIFE?,Members aged 65 to 80 are eligible.
+22,M,35,14523,3,99,What is the Full Retirement Sum?,It is the amount set aside for retirement payouts.
+25,F,40,185949,8,84,Can I leave my CPF savings after 55?,"Yes, your savings continue earning CPF interest."
+25,F,40,185949,8,90,Can I withdraw CPF savings online?,"Yes, eligible members can make withdrawals online."
+25,F,40,185949,8,88,What is the payout eligibility age?,The payout eligibility age is currently 65.
+25,F,40,185949,8,92,Why should I make a CPF nomination?,A CPF nomination ensures your CPF savings are distributed according to your wishes.
+27,M,53,38509,2,95,Can I defer CPF LIFE payouts?,"Yes, payouts can be deferred up to age 70."
+28,M,49,199317,4,96,What happens if I outlive my CPF savings?,CPF LIFE continues paying monthly payouts for life.
+29,M,51,204061,2,101,Can I customise my withdrawal limit?,"Yes, members can lower their Daily Withdrawal Limit."
+29,M,51,204061,2,98,What is CPF Withdrawal Lock?,It allows members to disable online withdrawals as an anti-scam measure.
+30,F,47,177427,6,102,What happens when I turn 55?,Your OA and SA savings are transferred into your Retirement Account.
+30,F,67,177427,6,103,How much can I withdraw at age 55?,"Members can withdraw up to $5,000 unconditionally."
+33,F,47,177427,1,107,Does marriage affect CPF nominations?,"Yes, marriage revokes existing nominations."
+33,F,47,177427,1,108,How much is my Full Retirement Sum?,"You can refer to the table below for your Full Retirement Sum (FRS) amount, which depends on the year you turn 55 and will remain the same for life.   Year turn 55 Full Retirement Sum (FRS) 1 July 2015 to 2016 $161,000 2017 $166,000 2018 $171,000 2019 $176,000 2020 $181,000 2021 $186,000 2022 $192,000 2023 $198,800 2024 $205,800 2025 $213,000 2026 $220,400 2027 $228,200   If you turned 55 before 1 July 2015, you can  view the past FRS (PDF, 35.1KB).   You can set aside your FRS with a mixture of CPF savings in your Retirement Account (RA) and CPF savings used for your property .   If you are 55 and above, you can choose to set aside more in your RA via top ups, up to the current Enhanced Retirement Sum, for higher monthly payouts."
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,7286.2,,,,
