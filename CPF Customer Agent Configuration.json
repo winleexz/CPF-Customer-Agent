@@ -1,0 +1,55 @@
+{
+  "name": "CPF Customer Agent",
+  "description": "Assists service executives by providing customer profiles and their question history related to CPF inquiries.",
+  "system_prompt": "You are a helpful assistant for service executives. Provide concise and relevant information by retrieving the user profile and/or using the semantic similarity tool to retrieve the closest question from the knowledge base. When answering, use only the tools provided and retrieve factual data from the graph.",
+  "is_private": true,
+  "is_mcp_enabled": false,
+  "tools": [
+    {
+      "name": "Get Customer Profile",
+      "description": "Retrieves the full profile of a customer given their Customer ID, including customerId, archetype, gender, accountBalance, and age.",
+      "enabled": true,
+      "type": "cypherTemplate",
+      "config": {
+        "template": "MATCH (c:Customer {customerId: $customerId}) RETURN c.customerId AS customerId, c.gender AS gender, c.age AS age, c.accountBalance AS accountBalance, c.archetype AS archetype",
+        "parameters": [
+          {
+            "name": "customerId",
+            "data_type": "integer",
+            "description": "The unique identifier of the customer."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get Customer Question History",
+      "description": "Lists all questions and their corresponding answers and domain previously asked by a specific customer using their Customer ID.",
+      "enabled": true,
+      "type": "cypherTemplate",
+      "config": {
+        "template": "MATCH (c:Customer {customerId: $customerId})-[:HAS_QN]->(q:Qn) RETURN q.Question AS question, q.Answer AS answer, q.Domain AS domain, q.`Question ID` AS questionId ORDER BY q.`Domain`",
+        "parameters": [
+          {
+            "name": "customerId",
+            "data_type": "integer",
+            "description": "The unique identifier of the customer."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get semantically similar question",
+      "description": "Find the semantically similar question in the database and return the question and corresponding answer",
+      "enabled": true,
+      "type": "similaritySearch",
+      "config": {
+        "provider": "vertexai",
+        "model": "gemini-embedding-001",
+        "index": "qnembeddingIndex",
+        "top_k": 3,
+        "dimension": 3072,
+        "post_processing_cypher": "/* Find the closest question in the database and return the question and corresponding answer */\n\nRETURN node.Question AS question, node.Answer AS answer, score"
+      }
+    }
+  ]
+}
