@@ -24,7 +24,7 @@ c) **Temporal Awareness**: By traversing the [:ASKED] relationships, the agent c
 ## 4.	Agent Tools 
 The agent pipeline is driven by an orchestrated suite of specialised tools that blend deterministic graph querying and semantic reasoning using three core tools:
 a) Get Customer Profile	(Cypher Template) - retrieves structured demographic variables
-b) Get Customer Question History (Cypher Template) - traverses the [:ASKED] relationships for a specific Customer ID to return a chronological list of prior questions 
+b) Get Customer Question History (Cypher Template) - traverses the [:ASKED] relationships for a specific Customer ID to return a chronological list of prior questions
 c) Get semantically similar question (Similarity Search) - embeds the incoming inquiry using gemini-embedding-001 and executes a cosine similarity search against the knowledge base to find the closest verified CPF FAQ
 
 ## 5.	Agent & Multi-Hop Reasoning in Action
@@ -36,6 +36,7 @@ c) Get semantically similar question (Similarity Search) - embeds the incoming i
 <img width="828" height="280" alt="image" src="https://github.com/user-attachments/assets/a4969947-9050-41d5-b98c-2a264d9aec5d" />
 <img width="828" height="283" alt="image" src="https://github.com/user-attachments/assets/41061e92-c9e1-43f2-af59-f006d046e5ec" />
 
+
 **b) Scenario B: Dynamic Calculations**
 - Query: Customer X asks: 'How much do I have to top up to hit FRS in 2027?'
 - Similarity Search Tool: The agent embeds the question text and searches the vector index. It returns the node detailing the 2027 FRS requirements
@@ -45,6 +46,7 @@ c) Get semantically similar question (Similarity Search) - embeds the incoming i
 
 ## 6.	Tech Stack
 <img width="940" height="346" alt="image" src="https://github.com/user-attachments/assets/e5256a23-2508-4f1c-92b8-cbd0f38c4bb3" />
+
 - Graph Database & Vector Index: Neo4j AuraDB to handle Cypher templates, vector search and cosine similarity vector matching
 - Core Reasoning Engine: Gemini 1.5 Pro / Flash
 - Embeddings Model: Vertex AI gemini-embedding-001
@@ -55,7 +57,6 @@ c) Get semantically similar question (Similarity Search) - embeds the incoming i
 a) **From "Search" to "Reasoning"**: Most AI bots perform a vector lookup and dump a block of text into a prompt. The CPF Customer Agent reasons across a connected knowledge network, providing the LLM with the multi-dimensional context required for complex public policy
 b) **Enterprise-Grade Grounding**: Public sector applications require absolute precision. By bounding the LLM strictly to factual subgraphs retrieved via Cypher templates, hallucinations are completely mitigated.
 c) **Operational Efficiency**: By unifying policies, customer profiles, and conversation history into a single, cohesive graph canvas, we eliminate the need for customer service executives to swivel-chair between different CRM tabs and policy manuals, drastically slashing Average Handle Time (AHT) while driving up response accuracy.
-
 
 ## Resources
 a) https://neo4j.com/developer/genai-ecosystem/
